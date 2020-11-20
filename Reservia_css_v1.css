@@ -1,0 +1,344 @@
+#bloc_page
+{
+    padding: 250px, 250px, 250px, 250px;
+}
+
+.log 
+{
+    width:150px;
+    height:80px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;   
+}
+
+nav ul
+{
+    list-style-type: none; /* Type de liste: rien ( pas de points etx...)*/
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 40px; /* Espace entre chaque <li> en partant de la droite */
+}
+
+article
+{
+    border-radius: 5px;
+    padding: 60px;
+    background-color: #706b64 
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+#photo_hebergement1
+{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #444;
+    width: 1100px;
+    border-style: none;
+}
+
+#cannebiere_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/marcus-loke-wqjvwu_hzfo-unspla_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#port_photo
+{
+    float: right;
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/fred-kleber-gtbaxavlvsg-unspla_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}*
+
+#mouettes_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/reisetopia-b8wigxa_pfu-unsplas_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#photo_hebergement2
+{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #444;
+    width: 1100px;
+    border-style: none;
+}
+
+
+#mer_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/marcus-loke-WQJvWU_HZFo-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#panier_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/nicate-lee-kt-zyaiwbe0-unsplas_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#amina_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/febrian-zakaria-m6s1wvfw68a-un_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+.style_banniere
+{
+    position: absolute; /*Dans ce cas, les propriétés top, bottom, right et left 
+    indiquent les distances entre les bords de l'élément et les bords du bloc */
+    bottom: 0; 
+    border-radius: 0px 0px 5px 5px; /* indique l'espacement et l'emplacement de la bande noir */
+    width: 99.5%; /*largeur du texte*/
+    height: 85px;/* hauteur du texte */
+    padding-top: 1px;
+    padding-left: 4px; /* emplacement lié a absolute, affect la bande noir*/
+    background-color: rgba(241, 234, 234, 0.35);
+    color: rgb(255, 248, 248);
+    font-size: 0.8em; /* police et couleur */
+}
+    
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    /*box-shadow: 0px 2px 5px #1c1a19;*/
+    border-radius: 5px;
+    padding: 60px;
+    /*color: white;*/
+    font-size: 0.9em;
+    /*display: block;*/
+    margin-right: 2000px;
+    width: 150%;
+    /*padding-top: .5rem;*/
+    padding-top: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+#soleil_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/emile-guillemot-bj_rcsc5xfe-un_mimini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#eau_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/aw-creative-VGs8z60yT2c-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}       
+
+#bleu_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/hebergements/5_mini/febrian-zakaria-sjvU0THccQA-unsplash_mini2.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+.style_banniere_2
+{
+    position: absolute; /*Dans ce cas, les propriétés top, bottom, right et left 
+    indiquent les distances entre les bords de l'élément et les bords du bloc */
+    bottom: 0; 
+    border-radius: 0px 0px 5px 5px; /* indique l'espacement et l'emplacement de la bande noir */
+    width: 99.5%; /*largeur du texte*/
+    height: 85px;/* hauteur du texte */
+    padding-top: 115px;
+    padding-left: 212px; /* emplacement lié a absolute, affect la bande noir*/
+    padding-right: 4px;
+    background-color: rgba(241, 234, 234, 0.35);
+    color: rgb(255, 248, 248);
+    font-size: 0.8em; /* police et couleur */
+    border: 50px;
+    
+}
+/* RIGHT,LEFT,MARGIN PR MOOVE UNE IMAGE. Text-indent moove le text*/
+
+jus
+{
+    display: flex;
+    align-content:flex-start ;
+
+    /*justify-content: space-around;*/
+    border: 2px solid #444;
+    width: 1100px;
+    border-style: none;
+}
+
+
+
+/*
+{
+    display: flex;
+    flex: start;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 50px;
+    background-color: #706b64;
+}*/
+
+#vieux_port_photo
+{
+
+    border-radius: 5px;
+    background: url('images/activites/5_mini/reno-laithienne-QUgJhdY5Fyk-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+    width: 460px; /* width of container */
+    height: 500px; /* height of container */
+    margin-left: -35%;
+    /*left: 30px;*/
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+#fort_photo
+{
+    max-height: 200px;
+    overflow: hidden;
+    margin-top: 15px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/activites/5_mini/paul-hermann-QFTrLdQIRhI-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+
+#iles_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/activites/5_mini/kevin-hikari-rV_Qd1l-VXg-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#calanques_photo
+{
+    border-radius: 5px;
+    background: url('images/activites/5_mini/kilyan-sockalingum-NR8-cBCN3aI-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+    width: 460px; /* width of container */
+    height: 500px; /* height of container */
+    margin-left: -35%;
+    /*left: 30px;*/
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+#garde_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/activites/5_mini/florian-wehde-xW9e8gdotxI-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#longchamps_photo
+{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: url('images/activites/5_mini/lena-paulin-wH2-EJoDcV0-unsplash_mini.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+
+
+
+
