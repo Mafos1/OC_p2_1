@@ -1,0 +1,426 @@
+
+<!--!DOCTYPE et liens css&fontawesome, ajouter le title -->
+
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style_v2.css" />
+            <link rel="stylesheet" type="text/css" href="./css/all.css ">
+            <title>Reservia - Des hébergements de rêves</title>
+        </head>
+    
+
+                                <!------------------------------------>
+                                <!-----!! Classé CHAQUE balise !!----->
+                                <!------------------------------------>
+    
+
+<!---- HEADER ------------------------->
+                <!-- Englobe tout le haut de la page. Logo et navigation-->
+
+    <!---- Logo ---->
+                    <!-- OBJECTIF : Lié l'image au lien et alt pour le moteur de recherche-->
+    <body>    
+        <header class="header"> 
+            <img class="header_img" src="images/logo/Reservia@3x.png" alt="Reservia">
+
+
+    <!---- Nav ---->
+                <!-- OBJECTIF : Classé les liens de navigation et lié avec une ancre -->
+
+            <nav class="header_nav">
+                <a class="header_nav_link" href="accomodation">Hébergement</a>
+                <a class="header_nav_link" href="accomodation_popular">Activités</a>
+                <a class="header_insc" href="#">S'inscrire</a>
+            </nav>    
+        </header>
+  
+
+
+<!---- MAIN ------------------------------>
+                <!-- OBJECTIF : Englobe les sections et ce qu'il y a dedans -->
+
+        <main class="main_page">
+
+    <!---- Texte d'accueil ---->     
+                    <!-- OBJECTIF : Ajouter les titres d'accueil dans un block, ouvrir la section filtres&infos-->
+
+            <section class="section1_search_title_infos">
+
+                <article class="article1_search_title">
+                    <h1 class="article1_title_h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class="article_title_h2">En plein centre de ville ou en pleine nature</h2>
+                </article>
+
+
+    <!---- Barre de recherche ---->    
+                     <!-- OBJECTIF : Créer la barre de recherche, ajouter l'icone <-1-> , la suggestion de mot <-2-> et créé le button <-3-> . 
+                    Utiliser balise inline pour que tout reste sur la même ligne du type span/input/button... -->
+
+                <div class="article1_search">
+                    <form class="search" action="traitement.php" method="POST">
+<!--1-->                <span class="search_icon"> 
+                            <i class="icon_gps fas fa-map-marker-alt " ></i> 
+                        </span>
+<!--2-->                <input class="search_bar" type="search" placeholder="Marseille, France" /> 
+<!--3-->                <button class="search_button"> 
+                            <span class="search_button_text">Rechercher</span>
+                            <i class="search_button_icon fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>         
+                
+    <!---- Filtres ----> 
+                        <!-- OBJECTIF : Créer la partie filtres diviser en block avec div. Faire le titre "Filtres" .
+                            Chaque partie se compose d'un texte et d'une icône. Le texte ne doit pas aller à la ligne !
+                            Il y a 3 niveau de block pour faire le filtre -->
+
+<!--1-->        <div class="filters">  
+                    <h2 class="filters_title">Filtres</h2>
+
+<!--2-->            <div class="filter_all_types"> 
+<!--3-->                    <div class="filter_all_type_icon"> 
+                                <i class="fas fa-money-bill-wave icon_filter"></i>  
+                            </div>
+                            <span class="filter_text">Economique</span>
+                        </div>
+
+<!--2-->                <div class="filter_all_types"> 
+<!--3-->                   <div class="filter_all_type_icon"> 
+                                <i class="fas fa-child icon_filter"></i>  
+                            </div>
+                            <span class="filter_text">Familial</span>
+                        </div>
+
+<!--2-->                <div class="filter_all_types"> 
+<!--3-->                    <div class="filter_all_type_icon"> 
+                                <i class="fas fa-heart icon_filter"></i>  
+                            </div>
+                            <span class="filter_text">Romantique</span>
+                        </div>
+
+<!--2-->                <div class="filter_all_types"> 
+<!--3-->                    <div class="filter_all_type_icon"> 
+                                <i class="fas fa-dog icon_filter"></i>  
+                            </div>
+                            <span class="filter_text">Animaux autorisés</span>
+                        </div>
+                </div>
+
+    <!---- Infos ---->  
+                        <!-- OBJECTIF : Mettre le i à coté de la phrase. Il sont l'un à coté de l'autre , 2 blocks -->
+
+                <div class="search_infos">
+                    <div class="search_infos_icon search-"><i class="fas fa-info info_icon"></i></div>
+                        <p class="search_info_text">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+    <!---- Hebergement et populaires ---->     
+
+                        <!-- OBJECTIF : Faire nouvelle section incluant le texte indiquant le résultat de la recherche , 
+                            6 articles , 1 aside et le texte de fin qui propose d'afficher plus-->
+
+            <section class="accomodations">       
+
+    <!---- Texte emplacement hebergement ---->
+                        <!-- OBJECTIF : Ouvrir un <div> général de l'article et ouvrir un block classique pour le titre -->    
+
+                <div class="accomodations_all">
+                        <div class="accomodations_title">
+                            <h1 class="accomodations_title_text">Hébergement à Marseille</h1>
+                        </div>
+
+    <!---- Hebergements ---->                
+                    <!-- OBJECTIF : Faire 6 articles cliquable dans la section, utiliser les balise block figure et figcaption pour inséré
+                        l'image réduite et ajouter les textes en 2 partie, puis les étoiles. Strong les € ou les prix. 
+                        Finir par le "afficher plus" -->
+
+<!--1-->            <article class="accomodations_type"> 
+                        <a href="#">
+                            <figure class="accomodation_type_block">
+                                <img class="accomodation_type_img" src="images/hebergements/5_mini/marcus-loke-wqjvwu_hzfo-unspla_mini.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Auberge la Cannebière</h3>
+                                    </figcaption>
+                            </figure>
+                            <p class="accomodation_price">Nuit à partir de <strong>25€</strong></p>
+                            <div class="accomodation_rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </a>    
+                    </article>
+
+<!--2-->            <article class="accomodations_type"> 
+                        <a href="#"> 
+                            <figure class="accomodation_type_block">
+                                <img class="accomodation_type_img" src="images/hebergements/5_mini/fred-kleber-gtbaxavlvsg-unspla_mini.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Hôtel du port</h3>
+                                    </figcaption>
+                            </figure>
+                            <p class="accomodation_price">Nuit à partir de 52<strong>€</strong></p>
+                            <div class="accomodation_rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </a>    
+                    </article> 
+                
+<!--3-->            <article class="accomodations_type"> 
+                        <a href="#">
+                            <figure class="accomodation_type_block">
+                                <img class="accomodation_type_img" src="images/hebergements/5_mini/reisetopia-b8wigxa_pfu-unsplas_mini.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Hôtel Les mouettes</h3>
+                                    </figcaption>
+                            </figure>
+                            <p class="accomodation_price">Nuit à partir de 76<strong>€</strong></p>
+                            <div class="accomodation_rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </a>    
+                    </article>      
+
+<!--4-->            <article class="accomodations_type"> 
+                        <a href="#">
+                            <figure class="accomodation_type_block">
+                                <img class="accomodation_type_img" src="images/hebergements/5_mini/marcus-loke-WQJvWU_HZFo-unsplash_mini.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Hôtel de la mer</h3>
+                                    </figcaption>
+                            </figure>
+                            <p class="accomodation_price">Nuit à partir de 46<strong>€</strong></p>
+                            <div class="accomodation_rating">
+                                <i class="fas fa-starn"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-starn"></i>
+                            </div>
+                        </a>    
+                    </article>        
+
+<!--5-->            <article class="accomodations_type"> 
+                        <a href="#">
+                            <figure class="accomodation_type_block">
+                                 <img class="accomodation_type_img" src="images/hebergements/5_mini/nicate-lee-kt-zyaiwbe0-unsplas_mini.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Auberge Le Panier</h3>
+                                    </figcaption>
+                            </figure>
+                            <p class="accomodation_price">Nuit à partir de <strong>23€</strong></p>
+                            <div class="accomodation_rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>   
+                        </a>    
+                    </article>   
+                     
+<!--6-->            <article class="accomodations_type"> 
+                        <a href="#">
+                                <figure class="accomodation_type_block">
+                                 <img class="accomodation_type_img" src ="images/hebergements/5_mini/ami1.jpg" />
+                                    <figcaption class="accomodation_type_caption">
+                                        <h3 class="accomodation_type_title">Hôtel chez Amina</h3>
+                                    </figcaption>
+                                </figure>
+                                <p class="accomodation_price">Nuit à partir de 96<strong>€</strong></p>
+                                <div class="accomodation_rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                        </a>        
+                    </article> 
+                     
+                     <a class="show_more" href="#">Afficher plus</a>  
+                </div>
+
+    <!---- Populaires ---->   
+                    <!-- OBJECTIF :  Faire 3 articles cliquable dans la meme section sous-section aside, utiliser les balises block figure 
+                        pour inséré l'image réduite et ajouter les textes en 2 parties, puis les étoiles -->
+
+    <!---- Texte populaire ---->  
+                    <!-- OBJECTIF : Créer l'aside et mettre le titre -->  
+
+                    <aside class="accomodation_popular">
+                        <h2 class="accomodation_popular_title">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+                        
+    <!---- Hebergements populaires ---->        
+                     <!---- OBJECTIF : Créer 3 articles cliquables---->    
+
+<!--1-->                <article class="accomodations_type"> 
+                            <a href="#">
+                                <figure class="popular_type_block_img">
+                                    <img class="popular_type_img" src="images/hebergements/5_mini/emile-guillemot-bj_rcsc5xfe-un_mimini.jpg" />
+                                </figure>    
+                                <div class="popular_type_img_and_stars">
+                                    <h3 class="popular_type_title">Hôtel le soleil matin</h3>
+                                        <p class ="popular_text">Nuit à partir de 128<strong>€</strong></p>
+                                            <div class="popular_space"></div>
+                                                <div class="popular_rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>    
+                                </div>  
+                            </a>    
+                        </article>  
+
+<!--2-->                <article class="accomodations_type"> 
+                            <a href="#">
+                                <figure class="popular_type_block_img">
+                                    <img class="popular_type_img" src="images/hebergements/5_mini/aw-creative-VGs8z60yT2c-unsplash_mini.jpg" />
+                                </figure>    
+                                <div class="popular_type_img_and_stars">
+                                    <h3 class="popular_type_title">Hôtel le soleil matin</h3>
+                                        <p class ="popular_text">Nuit à partir de 71<strong>€</strong></p>
+                                            <div class="popular_space"></div>
+                                                <div class="popular_rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </div>    
+                                </div>
+                            </a>      
+                        </article>  
+
+<!--3-->                <article class="accomodations_type popular_type"> 
+                            <a href="#">
+                                <figure class="popular_type_block_img">
+                                    <img class="popular_type_img" src="images/hebergements/5_mini/febrian-zakaria-sjvU0THccQA-unsplash_mini2.jpg" />
+                                </figure<>    
+                                <div class="popular_type_img_and_stars">
+                                    <h3 class="popular_type_title">Hôtel le soleil matin</h3>
+                                        <p class ="popular_text">Nuit à partir de 68<strong>€</strong></p>
+                                            <div class="popular_space"></div>
+                                                <div class="popular_rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </div>    
+                                </div>  
+                            </a>    
+                        </article>  
+                        </aside>      
+                </section>
+                        
+          
+    <!---- Activite à Marseille ---->    
+                        <!-- OBJECTIF : Créer 1 nouvelle section et 6 articles. La titre de présentation puis les articles avec 
+                            href figure et titre. Fin du main -->
+
+            <section class="activity">
+                <h1 class="acticity_type">Activité à Marseille</h1>
+
+                <a href="#">    
+<!--1-->            <figure class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/reno-laithienne-QUgJhdY5Fyk-unsplash_mini.jpg" />
+                    </figure>
+                    <h3 class="activity_title">Vieux Port</h3>
+                </a>    
+                
+                <a href="#">
+<!--2-->            <figure class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/paul-hermann-QFTrLdQIRhI-unsplash_mini.jpg" />
+                    </figure >
+                    <h3 class="activity_title">Fort de Pomègues</h3>
+                </a>    
+                
+                <a href="#">    
+<!--3-->            <figure  class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/kevin-hikari-rV_Qd1l-VXg-unsplash_mini.jpg" />
+                    </figure >
+                    <h3 class="activity_title">Île du Frioul</h3>
+                </a>
+
+                <a href="#">    
+<!--4-->            <figure class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/kilyan-sockalingum-NR8-cBCN3aI-unsplash_mini.jpg" />
+                    </figure >
+                    <h3 class="activity_title">Parc National des Calanques</h3>
+                </a>    
+                
+                <a href="#">
+<!--5-->            <figure  class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/florian-wehde-xW9e8gdotxI-unsplash_mini.jpg" />
+                    </figure >
+                    <h3 class="activity_title">Notre-Dame-de-la-Garde</h3>
+                </a>    
+                
+                <a href="#">   
+<!--6-->            <figure  class="activity_block_img">
+                        <img class="activity_img" src="images/activites/5_mini/lena-paulin-wH2-EJoDcV0-unsplash_mini.jpg" />
+                    </figure >
+                    <h3 class="activity_title">Parc Longchamp</h3>
+                </a>    
+                
+            </section>   
+        </main> 
+
+        <!---- FOOTER ---->
+                    <!-- OBJECTIF : Créer 3 sections listé et cliquable. Titre et liste linké -->
+
+        <footer class="footer_page">
+
+<!--1-->    <nav class="liste_1">
+                <section class="liste_1_section">
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </section>
+            </nav>
+
+<!--2-->            <nav class="liste_2">
+                <section class="liste_2_section">
+                    <ul>
+                        <li><a href="#">Charte de qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </section>
+            </nav>
+
+<!--3-->            <nav class="liste_3">
+                <section class="liste_3_section">
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="mailto:contact@reservia.com">Nous contacter</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </footer>   
+    </body>             
+
+                        
+
+
+               
