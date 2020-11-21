@@ -1,14 +1,14 @@
 /* -- HEADER --*/
 
-body{ /* Ajouter police et changer le fond pour toute la page*/
+body{ 
     font-family: 'Raleway', sans-serif;*/
     background-color: white;
 }
 
 .header{
-    display: flex; /* Parent remonte le nav */
-    align-items: center; /* Aligne avec les autres éléments */
-    justify-content: space-between; /* Decalle le nav au bout */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 .header_img{
     width: auto;
