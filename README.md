@@ -14,7 +14,7 @@ MAJ 19/11
 
 MAJ 20/11
  
- Rajout de balises href oublié, remplacement de balise par d'autres, insertion de certains div dans d'autres
+ Rajout de balises href oublié, remplacement de balises par d'autres ( h1/p/span/div ), insertion de balises dans d'autres ( div/nav )
  
 MAJ 20/11
 
