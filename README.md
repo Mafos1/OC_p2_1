@@ -2,9 +2,7 @@
 
 Ecriture v1.hmtl et .css 
 
-Reprise a partir de 0 car plein de problèmes en CSS
- 
-Relecture des cours, exercice etc
+Reprise a partir de 0 car de nombreux problèmes avec le CSS
  
 Création de 2 html différents, un V2_notes et des explications, et un V2_clean
  
