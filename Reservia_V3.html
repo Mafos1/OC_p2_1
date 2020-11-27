@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="reservia_style_V3.css" />
+    <link rel="stylesheet" href="reservia_style_V3_1.css" />
     <link rel="stylesheet" type="text/css" href="css/all.css ">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
@@ -18,9 +18,9 @@
 
         <!---- Nav ---->
 
-        <nav class="header_nav"> <!-- /!\------------------------------------------------------------------------>
-            <a class="header_nav_link_1" href="accomodation_all">Hébergement</a> 
-            <a class="header_nav_link_2" href="activites">Activités</a>
+        <nav class="header_nav"> 
+            <a class="header_nav_link_1" href="#accomodation_all">Hébergement</a> 
+            <a class="header_nav_link_2" href="#activites">Activités</a>
             <a class="header_insc" href="#">S'inscrire</a>
         </nav>
     </header>
@@ -36,7 +36,7 @@
 
         <article class="article1_search_title">
             <p class="article1_title_h1">Trouvez votre hébergement pour des vacances de rêve</p>
-            <p class="article_title_h2">En plein centre de ville ou en pleine nature</p>
+            <p class="article1_title_h2">En plein centre de ville ou en pleine nature</p>
         </article>
 
         <!---- Barre de recherche ---->
@@ -93,13 +93,14 @@
 
     </section>
     <div class="search_infos">  <!-- /!\------------------------------------------------------------------------------>
-        <div class="search_infos_icon"><i class="fas fa-info info_icon"></i></div>
+        <div class="search_infos_icon">
+            <i class="fas fa-info info_icon"></i></div>
         <p class="search_info_text">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
 
     <main class="main">
-        <div class="accomodation_all">
+        <div id="accomodation_all">
             <section class="accomodations">
                 <div class="accom-title">
                     <h2 class="heber_mars">Hébergements à Marseille</h2><br />
@@ -279,8 +280,9 @@
             </div>
         </div>
 
+        <!-- Activites -->
 
-        <section class="activites">
+        <section id="activites">
 
             <h2 id="activites-section">Activités à Marseille</h2>
             <div class="activite_ref">
