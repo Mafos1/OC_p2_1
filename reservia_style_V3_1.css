@@ -11,7 +11,7 @@ html {
     padding: 0 50px;
 }
 body{
-    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
 }
 h4{
     margin: 4px;
@@ -52,7 +52,6 @@ h2{
 /****************/
 /*-- nav top -- */
 /****************/
-
 
 
 .header_nav{
@@ -96,9 +95,10 @@ h2{
     font-size: 1.65em;
     margin-bottom: 0.2rem;
 }
-.article_title_h2{
+.article1_title_h2{
     font-size: 1.09em;
     margin-top: 0rem;
+    line-height: 15px;
 }
 
 
@@ -107,6 +107,17 @@ h2{
 /****************/
 
 
+.search_infos_icon{
+    border: 1px solid red;
+    border-radius : 25px 25px 25px 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #0065FC;
+    font-weight: 100;
+    font-size: 0.65rem;
+}
 .search_icon{
     background-color:#F2F2F2;
     padding: 0.68rem 0.8rem;
@@ -139,14 +150,14 @@ h2{
 }
 
 
-
-/****************/
-/* -- Filter -- */
-/****************/
+/*****************/
+/* -- Filters -- */
+/*****************/
 
 
 .filters{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 75em;
     margin-top: 2rem;
@@ -193,7 +204,7 @@ h2{
 /* -- ACCOMODATION -- */
 /**********************/
 
-.accomodation_all{
+#accomodation_all{
     display: flex;
     margin-bottom: 50px;
 }
@@ -223,6 +234,7 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 5px;
+   
     object-fit: none;
 }
 .rating_icons_1 { 
@@ -236,6 +248,7 @@ h2{
 }
 .accomodation_name{
     margin-left: 15px;
+    padding-bottom: 10px;
 }
 .show_more{  
     margin: 1rem 0 0 4.5rem ;
@@ -248,10 +261,16 @@ h2{
 /* -- ACTIVITE -- */
 /******************/
 
+#activites{
+    
+}
 .activite_name{
     font-size: 1.1em;
     margin: 10px;
     font-style: bold;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    
 }
 .activite_desc{
     box-shadow: 1px 1px 1px 1px rgb(236, 236, 236);
@@ -268,6 +287,7 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: none;
+    margin-bottom: 15px;
 }
 .Fort_de_pomegues_img{
     width: 300px;
@@ -275,6 +295,7 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: none;
+    margin-bottom: 15px;
 }
 .Iles_du_frioul_img{
     width: 300px;
@@ -282,13 +303,16 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: cover;
+    margin-bottom: 15px;
 }
+   
 .Parc_nat_calanques_img{
     width: 335px;
     height: 390px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: none;
+    margin-bottom: 15px;
 }
 .Notre_dame_img {
     width: 310px;
@@ -296,6 +320,7 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: cover;
+    margin-bottom: 15px;
 }
 .Parc_longchamp_img{
     width: 310px;
@@ -303,6 +328,7 @@ h2{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: cover;
+    margin-bottom: 15px;
 }
 
 
@@ -323,6 +349,7 @@ h2{
     padding: 3px;
     display: flex;
     background-color: white;
+    width: 20rem;
     margin-top: 30px;
 }
 .text_margin_top{
@@ -367,6 +394,8 @@ h2{
       margin-left: 10px;
 }
 
+
+
 /****************/
 /* -- Footer -- */
 /****************/
@@ -378,6 +407,9 @@ h2{
     text-decoration: none;
     color: black;
     margin: 5rem -5rem 0 -5rem;
+    padding: 5rem;
+    padding-right: 29rem;
+
 }
 .dot{
     list-style: none;
