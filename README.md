@@ -20,3 +20,7 @@ MAJ 20/11
 
 Ajout du début du fichier style_v2.css lié a Reserviav2_2_clean.html
  
+MAJ 27/11
+
+J'ai du arreter mon travail sur le projet durant 5 jours pour des faits exterieurs. J'ai pas mal modifier le html de la partie hébergement, activité et populaire.
+Il ne reste que des finitions à faire sur le CSS et à mettre en place le responsive.
