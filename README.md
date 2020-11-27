@@ -24,3 +24,5 @@ MAJ 27/11
 
 J'ai du arreter mon travail sur le projet durant 5 jours pour des faits exterieurs. J'ai pas mal modifier le html de la partie hébergement, activité et populaire.
 Il ne reste que des finitions à faire sur le CSS et à mettre en place le responsive.
+
+Ajout des V3.
