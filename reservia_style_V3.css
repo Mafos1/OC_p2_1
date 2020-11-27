@@ -304,29 +304,29 @@ h2{
     border-top-right-radius: 30px;
     object-fit: cover;
 }
-.a_1_4 > div:nth-child(1) {
+.a_1_4 : div:nth-child(1) {
     width: 335px;
     height: 450px;
 }
-.b_2_3 > div:nth-child(1) {
+.b_2_3 : div:nth-child(1) {
     width: 300px;
     height: 235px;
     margin-bottom: 45px;
 }
-.b_2_3 >div:nth-child(2) {
+.b_2_3 : div:nth-child(2) {
     height: 170px;
     width: 300px;
 }
-.a_1_4 > div:nth-child(3) {
+.a_1_4 : div:nth-child(3) {
     width: 3px;
     height: 450px;
 }
-.c_5_6 > div:nth-child(1) {
+.c_5_6 : div:nth-child(1) {
     width: 310px;
     height: 195px;
     margin-bottom: 45px;
 }
-.c_5_6 > div:nth-child(2) {
+.c_5_6 : div:nth-child(2) {
     width: 310px;
     height: 210px;
 }
