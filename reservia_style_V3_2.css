@@ -1,4 +1,3 @@
-
 /********************/
 /* -- BLOCK PAGE -- */
 /********************/
@@ -98,7 +97,7 @@ h2{
 .article1_title_h2{
     font-size: 1.09em;
     margin-top: 0rem;
-    line-height: 15px;
+    line-height: 25px;
 }
 
 
@@ -107,16 +106,17 @@ h2{
 /****************/
 
 
-.search_infos_icon{
-    border: 1px solid red;
+
+.search_infos_icon2{
+    border: 1px solid #F2F2F2;
     border-radius : 25px 25px 25px 25px;
     width: 20px;
     height: 20px;
-    line-height: 20px;
+    line-height: 10px;
     text-align: center;
     color: #0065FC;
     font-weight: 100;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
 }
 .search_icon{
     background-color:#F2F2F2;
@@ -135,6 +135,10 @@ h2{
     border-left: none;
     padding: 0.5rem;
     font-family: "Raleway", "Sans serif"; 
+    font-weight: bold;
+}
+.placeholder{
+    color: black ;
 }
 .search_button{
     background-color: #0065FC;
@@ -148,8 +152,10 @@ h2{
     color: white;
     font-weight: bold;
 }
-
-
+.search_button_icon_2{
+    color: white;
+    font-size: 120%;
+}
 /*****************/
 /* -- Filters -- */
 /*****************/
@@ -168,6 +174,11 @@ h2{
     
 }
 .filter_all_types{
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+}
+.filter_all_type2s{
     display: flex; 
     align-items: center;
     cursor: pointer;
@@ -197,6 +208,7 @@ h2{
     font-family: "Raleway", "Sans serif";
     margin-left: -19px;
     padding-left: 25px;
+    font-weight: bold;
 }
 
 
@@ -221,6 +233,7 @@ h2{
     background-color: #f0f0f1; 
     width: 80%; 
     border-radius: 30px;
+    min-width: 18rem;
 }
 .accomodation_ref{ 
     box-shadow: 4px 4px 4px 4px rgb(236, 236, 236);
@@ -257,9 +270,9 @@ h2{
 }
 
 
-/******************/
-/* -- ACTIVITE -- */
-/******************/
+/********************/
+/* -- ACTIVITIES -- */
+/********************/
 
 #activites{
     
@@ -267,7 +280,7 @@ h2{
 .activite_name{
     font-size: 1.1em;
     margin: 10px;
-    font-style: bold;
+font-style: bold;
     margin-bottom: 35px;
     padding-bottom: 15px;
     
@@ -333,7 +346,7 @@ h2{
 
 
 /*****************/
-/* -- Popular -- */
+/* -- POPULAR -- */
 /*****************/
 
 
@@ -342,6 +355,7 @@ h2{
     border-radius: 30px;
     margin-left: 40px;
     padding: 10px 30px 25px 30px;
+    max-height: 41rem;
 }
 .popular_types{
     box-shadow: 4px 4px 4px 4px rgb(236, 236, 236);
@@ -395,10 +409,10 @@ h2{
 }
 
 
+/****************/
+/* -- FOOTER -- */
+/****************/
 
-/****************/
-/* -- Footer -- */
-/****************/
 
 .footer_page{
     display: flex;
@@ -409,7 +423,6 @@ h2{
     margin: 5rem -5rem 0 -5rem;
     padding: 5rem;
     padding-right: 29rem;
-
 }
 .dot{
     list-style: none;
@@ -422,7 +435,6 @@ h2{
     font-style: bold;
 }
 .footer_style_title{
-    
     text-decoration: none;
     color: black;
 }
@@ -438,3 +450,190 @@ h2{
     font-family: "Raleway", "Sans serif"; 
     font-style: bold;
 }
+
+/****************************************************************************/
+
+
+/************************/
+/* -- MEDIA QUERRIES -- */
+/************************/
+
+
+@media screen and (max-width: 480px) {
+  
+    @font-family{
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    html {
+    margin: 0;
+    padding: 0;
+    }
+
+    /*****- HEADER -*****/
+
+    .header_nav{
+    display: flex;
+    justify-content: space-around;
+    }
+    .header{
+    display: block;
+    padding-top: 20px;
+    }
+    .header_nav_link_1{
+    border-top: none;
+    border-bottom: 3px solid;
+    border-color: #0065FC; 
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .header_nav_link_2{
+    border-top: none;
+    border-bottom: 3px solid;
+    border-color: #f0f0f1;
+    line-height: 7px;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .header_insc{
+    position: absolute;
+    top: 0;
+    right: 69px;
+    font-weight: bold;
+    line-height: 85px;
+    padding-left: 200px;
+    }
+
+    /*****- SEARCH -*****/
+
+    .search_bar {
+    width: 76%;
+    font-weight: bold;
+    }
+    .article1_search{
+    margin-top: 2rem;   
+    }
+    .article1_search{
+    display: flex;
+    justify-content: center;
+    }
+    .search_button_text{
+    display: none;
+    }
+    .search_button{
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    }
+    .search_button_icon_2{
+    padding: 3px 3px 3px 3px;
+    }
+
+    /*****- FILTERS -*****/
+    
+    .filters_title{
+    display: block;
+    width: 100%;
+    }
+    .filter_all_types{
+    margin-top: 10px;
+    }
+    .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    }
+  
+    /*****- ACCOMODATIONS -*****/
+
+   .accomodations{
+    width: 100%;
+    background-color: white;
+    }
+   .show_more{
+    margin-left: 3%;
+    }
+    #accomodation_all{
+    flex-direction: column-reverse;
+    }
+    .accomodation_img{
+    width: 95%;
+    }
+    .heber_mars{
+    margin-left: -30px;
+    }
+    .accomodation_ref{
+    height: 200px;
+    width: 600x;
+    }
+    
+    /*****- POPULAR -*****/
+
+   .popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: -20px;
+    border-radius: 0;
+   }
+   .popular_types{
+    
+   }
+   .popular_title{
+    margin-left: 1em;
+   }
+    
+   
+   /******- ACTIVITY -*****/
+
+   #activites-section{
+       margin-left: 0.5em;
+       margin-bottom: 1.1em;
+   }
+
+    .activite_ref{
+    justify-content: center;
+    }
+
+    .activite_name{
+    font-weight: 1000;
+    padding-bottom: 20px;
+   }
+   .Vieux_port_img{
+    height: 9em;
+    width: 22em;
+   }
+   .Fort_de_pomegues_img{
+    height: 9em;
+    width: 22em;
+   }
+   .Iles_du_frioul_img{
+    height: 9em;
+    width: 22em;
+   }
+   .Parc_nat_calanques_img{
+    height: 9em;
+    width: 22em;
+   }
+   .Notre_dame_img{
+    height: 9em;
+    width: 22em;
+   }
+   .Parc_longchamp_img{
+    height: 9em;
+    width: 22em;
+   }
+
+    
+/*****- FOOTER -******/
+
+    .footer_page{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem -5rem 0 -5rem;
+        padding: 5rem;
+    
