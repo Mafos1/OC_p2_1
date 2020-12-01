@@ -26,3 +26,6 @@ J'ai du arreter mon travail sur le projet durant 5 jours pour des faits exterieu
 Il ne reste que des finitions à faire sur le CSS et à mettre en place le responsive.
 
 Ajout des V3.
+
+1/12
+Ajout des version 3.2. CSS smartphone ready
